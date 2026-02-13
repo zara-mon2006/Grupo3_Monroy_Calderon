@@ -109,7 +109,7 @@ Este repositorio contiene el desarrollo del proyecto de **Programación Avanzada
 
 ```bash
 git clone https://github.com/zara-mon2006/Grupo3_Monroy_Calderon.git
-
+```
 ## 📚 Recursos Adicionales
 
 - Riva, M. *Real-World Next.js: Build scalable, high-performance, and modern web applications using Next.js, the React framework for production.*  
