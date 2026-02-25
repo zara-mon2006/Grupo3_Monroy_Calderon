@@ -21,3 +21,29 @@ document.getElementById('contactForm').addEventListener('submit', (e) => {
         e.target.reset();
     }
 });
+
+// Animación + click para las tarjetas de "Datos curiosos"
+const cardsDatos = document.querySelectorAll('.card-dato');
+
+function animarCardsDatos() {
+  cardsDatos.forEach((card, index) => {
+    const posicion = card.getBoundingClientRect().top;
+
+    if (posicion < window.innerHeight - 80 && !card.classList.contains('visible')) {
+      setTimeout(() => {
+        card.classList.add('visible');
+      }, index * 120); // pequeño retraso entre tarjetas
+    }
+  });
+}
+
+// Click interactivo (activa/desactiva tarjeta)
+cardsDatos.forEach(card => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('activa');
+  });
+});
+
+// Ejecutar al cargar y al hacer scroll
+window.addEventListener('load', animarCardsDatos);
+window.addEventListener('scroll', animarCardsDatos);
