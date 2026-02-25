@@ -1,4 +1,4 @@
-<section<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -7,14 +7,17 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- TU JS -->
+  <script src="script.js" defer></script>
 </head>
 <body>
     <header class="header">
-        <h1> Zara Melisa Monroy Vera</h1>
-        <p>Estudiante de Ingeniera Mecatronica</p>
+        <h1> Nuestro Portafolio Profesional</h1>
+        <p>Estudiantes de Ingeniera Mecatronica: Zara Melisa Monroy Vera y Juan David Calderón Gutierrez</p>
     </header> <!--Encabezado-->
 
-    <class="datos-curiosos">
+    <section class="datos-curiosos">
         <div class="contenedor">
             <h2>Información base</h2>
 
@@ -45,65 +48,146 @@
     </section> <!--Sección de la página-->
 
     <section class="projects py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Proyectos Recientes</h2>
+
+                <div class="projects-grid">
+                    
+                    <!-- TARJETA 1 -->
+                    <div class="project-card">
+                        <div class="card-top">
+                            <i class="bi bi-cart3 card-icon"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Tienda en Línea</h3>
+                            <p>Plataforma de e-commerce con carrito de compras</p>
+                            <div class="tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TARJETA 2 -->
+                    <div class="project-card">
+                        <div class="card-top">
+                            <i class="bi bi-graph-up-arrow card-icon"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Dashboard Analítica</h3>
+                            <p>Panel de control con gráficas en tiempo real</p>
+                            <div class="tags">
+                                <span>Vue.js</span>
+                                <span>Chart.js</span>
+                                <span>API REST</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TARJETA 3 -->
+                    <div class="project-card">
+                        <div class="card-top">
+                            <i class="bi bi-phone card-icon"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>App Móvil</h3>
+                            <p>Aplicación multiplataforma nativa</p>
+                            <div class="tags">
+                                <span>Flutter</span>
+                                <span>Firebase</span>
+                                <span>Dart</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="contenedor">
+            <h2>Skills</h2>
+
+            <div class="skills-wrap">
+            <!-- CÍRCULO: BLANDAS -->
+            <div class="skill-wheel" data-center="Blandas">
+                <div class="wheel-center">
+                <span class="wheel-title">Blandas</span>
+                <span class="wheel-sub">Soft skills</span>
+                </div>
+
+                <ul class="wheel-items">
+                <li><button type="button">Liderazgo</button></li>
+                <li><button type="button">Trabajo en equipo</button></li>
+                <li><button type="button">Comunicación</button></li>
+                <li><button type="button">Gestión del tiempo</button></li>
+                <li><button type="button">Responsabilidad</button></li>
+                <li><button type="button">Pensamiento crítico</button></li>
+                <li><button type="button">Tolerancia</button></li>
+                <li><button type="button">Creatividad</button></li>
+                </ul>
+            </div>
+
+            <!-- CÍRCULO: DURAS / TÉCNICAS -->
+            <div class="skill-wheel" data-center="Técnicas">
+                <div class="wheel-center">
+                <span class="wheel-title">Técnicas</span>
+                <span class="wheel-sub">Hard skills</span>
+                </div>
+
+                <ul class="wheel-items">
+                <li><button type="button">CAD</button></li>
+                <li><button type="button">Electrónica</button></li>
+                <li><button type="button">Matemáticas</button></li>
+                <li><button type="button">Analizar datos</button></li>
+                <li><button type="button">Pensamiento sistemático</button></li>
+                </ul>
+            </div>
+            </div>
+
+            <p class="skills-hint">Tip: pasa el mouse o haz clic en una habilidad.</p>
+        </div>
+    </section>
+    
+    <footer class="footer">  <!-- inicio del footer -->
         <div class="container">
-            <h2 class="text-center mb-5">Proyectos Recientes</h2>
-
-            <div class="projects-grid">
+            <div class="footer-content">
                 
-                <!-- TARJETA 1 -->
-                <div class="project-card">
-                    <div class="card-top">
-                        <i class="bi bi-cart3 card-icon"></i>
-                    </div>
-                    <div class="card-content">
-                        <h3>Tienda en Línea</h3>
-                        <p>Plataforma de e-commerce con carrito de compras</p>
-                        <div class="tags">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                        </div>
-                    </div>
+                <div class="footer-section">
+                    <h4>Creadores</h4>
+                    <p>Juan David Calderon</p>
+                    <p>Zara Melisa Monroy</p>
+                    <p>Somos jovenes desarrolladores webs apasionados por crear soluciones modernas y funcionales.</p>
                 </div>
 
-                <!-- TARJETA 2 -->
-                <div class="project-card">
-                    <div class="card-top">
-                        <i class="bi bi-graph-up-arrow card-icon"></i>
-                    </div>
-                    <div class="card-content">
-                        <h3>Dashboard Analítica</h3>
-                        <p>Panel de control con gráficas en tiempo real</p>
-                        <div class="tags">
-                            <span>Vue.js</span>
-                            <span>Chart.js</span>
-                            <span>API REST</span>
-                        </div>
-                    </div>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="#about">Sobre mí</a></li>
+                        <li><a href="#projects">Proyectos</a></li>
+                        <li><a href="#skills">Habilidades</a></li>
+                    </ul>
                 </div>
 
-                <!-- TARJETA 3 -->
-                <div class="project-card">
-                    <div class="card-top">
-                        <i class="bi bi-phone card-icon"></i>
-                    </div>
-                    <div class="card-content">
-                        <h3>App Móvil</h3>
-                        <p>Aplicación multiplataforma nativa</p>
-                        <div class="tags">
-                            <span>Flutter</span>
-                            <span>Firebase</span>
-                            <span>Dart</span>
-                        </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>Email: jdcalderon-2024a@corhuila.edu.co</p>
+                    <p>Email: zmmonroy-2024a@corhuila.edu.co</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-github"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-envelope-fill"></i></a>
                     </div>
                 </div>
 
             </div>
+
+            <div class="footer-bottom">
+                <p>©️ 2026 Juan David- Zara Melisa. Todos los derechos reservados.</p>
+            </div>
         </div>
-    </section>
-    
-    <section class="skills"></section> 
-    <footer class="footer"></footer> <!--información de cierre-->
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     
