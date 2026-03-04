@@ -1,0 +1,62 @@
+/*================
+VARIABLES Y ESTILOS PERSONALIZADOS
+*/
+:root{
+    --primary-color:#2c3e50;
+    --secondary-color:#3498db;
+    --accent-color:#e74c3c;
+    --light-bg:#ecf0f1;
+    --text-dark:#2c3e50;
+    --text-light:#7f8c8d;
+}
+ 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+ 
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+ 
+/*======================
+BARRA DE NAVEGACIÓN
+*/
+.navbar{
+    background: linear-gradient(135deg, var(--primary-color)0%, var(--secondary-color)100%);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top:0;
+    z-index: 1000;
+}
+ 
+.navbar-brand{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white !important;
+    letter-spacing: 1px;
+}
+ 
+.navbar-brand span{
+    color: var(--accent-color);
+}
+
+.navbar-nav .nav-link{
+    color: rgba(255,255,255,0.8) !important;
+    margin-left:1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+
+}
+
+.navbar-nav .nav-link:hover{
+    color: var(--accent-color) !important;
+}
+
+/*======================
+SECCIÓN HEROE
+*/
+
