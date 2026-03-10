@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio CV - Científico de Datos</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles-portafolio.css" />
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#inicio">
+          <i class="fas fa-code"></i> Portafolio <span>.Dev</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="#acerca" class="nav-link">Acerca de mí</a></li>
+            <li class="nav-item"><a href="#habilidades" class="nav-link">Habilidades</a></li>
+            <li class="nav-item"><a href="#experiencia" class="nav-link">Experiencia</a></li>
+            <li class="nav-item"><a href="#proyectos" class="nav-link">Proyectos</a></li>
+            <li class="nav-item"><a href="#educacion" class="nav-link">Educación</a></li>
+            <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--==========================
+    SECCIÓN HEROE
+    =============================-->
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+
+        <!-- Imagen SVG de Mecatrónica -->
+        <div class="hero-mecatronica">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="mecatronica-svg">
+            <!-- Fondo circular -->
+            <circle cx="100" cy="100" r="95" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+            <!-- Engranaje grande -->
+            <g transform="translate(100,100)">
+              <circle r="28" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="3"/>
+              <circle r="12" fill="rgba(255,255,255,0.9)"/>
+              <!-- Dientes engranaje -->
+              <rect x="-5" y="-38" width="10" height="12" rx="2" fill="rgba(255,255,255,0.9)"/>
+              <rect x="-5" y="26" width="10" height="12" rx="2" fill="rgba(255,255,255,0.9)"/>
+              <rect x="26" y="-5" width="12" height="10" rx="2" fill="rgba(255,255,255,0.9)"/>
+              <rect x="-38" y="-5" width="12" height="10" rx="2" fill="rgba(255,255,255,0.9)"/>
+              <rect x="17" y="-36" width="10" height="12" rx="2" fill="rgba(255,255,255,0.9)" transform="rotate(45)"/>
+              <rect x="17" y="-36" width="10" height="12" rx="2" fill="rgba(255,255,255,0.9)" transform="rotate(90)"/>
+              <rect x="17" y="-36" width="10" height="12" rx="2" fill="rgba(255,255,255,0.9)" transform="rotate(135)"/>
+              <rect x="17" y="-36" width="10" height="12" rx="2" fill="rgba(255,255,255,0.9)" transform="rotate(180)"/>
+            </g>
+            <!-- Brazo robótico izquierda -->
+            <line x1="30" y1="80" x2="65" y2="100" stroke="rgba(255,255,255,0.8)" stroke-width="5" stroke-linecap="round"/>
+            <line x1="30" y1="80" x2="20" y2="55" stroke="rgba(255,255,255,0.8)" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="30" cy="80" r="6" fill="rgba(255,255,255,0.9)"/>
+            <circle cx="20" cy="55" r="5" fill="rgba(255,255,255,0.7)"/>
+            <!-- Brazo robótico derecha -->
+            <line x1="170" y1="80" x2="135" y2="100" stroke="rgba(255,255,255,0.8)" stroke-width="5" stroke-linecap="round"/>
+            <line x1="170" y1="80" x2="180" y2="55" stroke="rgba(255,255,255,0.8)" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="170" cy="80" r="6" fill="rgba(255,255,255,0.9)"/>
+            <circle cx="180" cy="55" r="5" fill="rgba(255,255,255,0.7)"/>
+            <!-- Circuito abajo -->
+            <line x1="60" y1="150" x2="140" y2="150" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+            <line x1="70" y1="150" x2="70" y2="165" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+            <line x1="100" y1="150" x2="100" y2="170" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+            <line x1="130" y1="150" x2="130" y2="165" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+            <circle cx="70" cy="165" r="4" fill="rgba(255,255,255,0.8)"/>
+            <circle cx="100" cy="170" r="4" fill="rgba(255,255,255,0.8)"/>
+            <circle cx="130" cy="165" r="4" fill="rgba(255,255,255,0.8)"/>
+            <!-- Señal WiFi / sensor arriba -->
+            <path d="M85,38 Q100,28 115,38" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M78,30 Q100,16 122,30" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="100" cy="44" r="4" fill="rgba(255,255,255,0.9)"/>
+          </svg>
+        </div>
+
+        <h1>Juan David Calderón & Zara Melisa Monroy</h1>
+        <p class="subtitle">Ingenieros en Mecatrónica</p>
+        <p class="description">
+          Apasionados por transformar datos en información valiosa. Con experiencia en análisis de datos,
+          modelado predictivo y visualización. Nuestro objetivo es ayudar a las empresas a tomar decisiones
+          informadas basadas en datos.
+        </p>
+        <a href="#contacto" class="btn btn-primary-custom">¡Contáctanos!</a>
+      </div>
+    </section>
+
+    <!--==========================
+    ACERCA DE MÍ
+    =============================-->
+    <section id="acerca" class="about">
+      <div class="container">
+        <h2 class="section-title">Acerca de nosotros</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestias!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ratione. Voluptates temporibus tempora vero ducimus.</p>
+          </div>
+          <div>
+            <ul class="info-list">
+              <li><strong>Nombres:</strong> Juan David Calderón & Zara Melisa Monroy</li>
+              <li><strong>Profesión:</strong> Ingenieros en Mecatrónica</li>
+              <li><strong>Email:</strong> jdcalderon-2024a@corhuila.edu.co</li>
+              <li><strong>Teléfono:</strong> +57 320 405 4609</li>
+              <li><strong>Ubicación:</strong> Neiva, Colombia</li>
+              <li><strong>Disponibilidad:</strong> Inmediata</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
+    HABILIDADES
+    =============================-->
+    <section id="habilidades" class="skills">
+      <div class="container">
+        <h2 class="section-title">Habilidades</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h4><i class="fas fa-code"></i> Frontend</h4>
+            <div class="skill-item">
+              <div class="skill-name"><span>HTML</span><span>95%</span></div>
+              <div class="skill-bar"><div class="skill-progress" style="--target: 95%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name"><span>Javascript</span><span>90%</span></div>
+              <div class="skill-bar"><div class="skill-progress" style="--target: 90%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name"><span>React</span><span>88%</span></div>
+              <div class="skill-bar"><div class="skill-progress" style="--target: 88%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name"><span>Bootstrap</span><span>92%</span></div>
+              <div class="skill-bar"><div class="skill-progress" style="--target: 92%;"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h4><i class="fas fa-database"></i> Backend</h4>
+            <div class="skill-item">
+              <div class="skill-name"><span>NodeJS</span><span>87%</span></div>
+              <div class="skill-bar"><div class="skill-progress" style="--target: 87%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name"><span>Express</span><span>86%</span></div>
+              <div class="skill-bar"><div class="skill-progress" style="--target: 86%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name"><span>MongoDb</span><span>85%</span></div>
+              <div class="skill-bar"><div class="skill-progress" style="--target: 85%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name"><span>SQL</span><span>83%</span></div>
+              <div class="skill-bar"><div class="skill-progress" style="--target: 83%;"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h4><i class="fas fa-tools"></i> Herramientas</h4>
+            <div class="skill-item">
+              <div class="skill-name"><span>Git/GitHub</span><span>93%</span></div>
+              <div class="skill-bar"><div class="skill-progress" style="--target: 93%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name"><span>Vscode</span><span>95%</span></div>
+              <div class="skill-bar"><div class="skill-progress" style="--target: 95%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name"><span>Docker</span><span>78%</span></div>
+              <div class="skill-bar"><div class="skill-progress" style="--target: 78%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name"><span>API REST</span><span>89%</span></div>
+              <div class="skill-bar"><div class="skill-progress" style="--target: 89%;"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
+    EXPERIENCIA LABORAL
+    =============================-->
+    <section id="experiencia" class="experience">
+      <div class="container">
+        <h2 class="section-title">Experiencia Laboral</h2>
+        <div class="timeline">
+
+          <div class="timeline-item left">
+            <div class="timeline-card">
+              <h3>Senior Desarrollador Full Stack</h3>
+              <p class="timeline-date"><i class="fas fa-calendar-alt"></i> Enero 2022 - <span class="present">Presente</span></p>
+              <p class="timeline-company">Empresa: TechCorp Solutions</p>
+              <p class="timeline-desc">Lideré el desarrollo de aplicaciones web escalables para clientes empresariales. Mentoringsé a un equipo de 3 desarrolladores junior y mejoré la velocidad de desarrollo en un 40%.</p>
+            </div>
+            <div class="timeline-dot"></div>
+          </div>
+
+          <div class="timeline-item right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <h3>Desarrollador Full Stack</h3>
+              <p class="timeline-date"><i class="fas fa-calendar-alt"></i> Junio 2020 - <span>Diciembre 2021</span></p>
+              <p class="timeline-company">Empresa: WebDevelopment Inc</p>
+              <p class="timeline-desc">Desarrollé más de 15 proyectos web utilizando React, Node.js y MongoDB. Implementé prácticas DevOps y reduje los tiempos de deployment.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item left">
+            <div class="timeline-card">
+              <h3>Desarrollador Frontend Junior</h3>
+              <p class="timeline-date"><i class="fas fa-calendar-alt"></i> Marzo 2019 - <span>Mayo 2020</span></p>
+              <p class="timeline-company">Empresa: Creative Digital Agency</p>
+              <p class="timeline-desc">Creé interfaces responsivas y trabajé en la optimización de performance. Aprendí las mejores prácticas de desarrollo web moderno.</p>
+            </div>
+            <div class="timeline-dot"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
+    PROYECTOS DESTACADOS
+    =============================-->
+    <section id="proyectos" class="projects">
+      <div class="container">
+        <h2 class="section-title">Proyectos Destacados</h2>
+        <div class="projects-grid">
+
+          <div class="project-card">
+            <div class="project-image"><i class="fas fa-shopping-cart"></i></div>
+            <div class="project-info">
+              <h3>E-Commerce Platform</h3>
+              <p>Plataforma de comercio electrónico completa con carrito de compras, sistema de pagos, y panel de administración. Más de 1000 usuarios activos.</p>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">Stripe</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                <a href="#" class="project-link"><i class="fas fa-code"></i> Código</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image"><i class="fas fa-tasks"></i></div>
+            <div class="project-info">
+              <h3>Gestión de Tareas</h3>
+              <p>Aplicación web para gestión de proyectos y tareas con colaboración en tiempo real, notificaciones y reportes analíticos.</p>
+              <div class="project-tags">
+                <span class="tag">Vue.js</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">WebSocket</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                <a href="#" class="project-link"><i class="fas fa-code"></i> Código</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image"><i class="fas fa-chart-line"></i></div>
+            <div class="project-info">
+              <h3>Dashboard Analítico</h3>
+              <p>Dashboard interactivo con visualización de datos en tiempo real. Integración con múltiples APIs y gráficos animados.</p>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Chart.js</span>
+                <span class="tag">API REST</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                <a href="#" class="project-link"><i class="fas fa-code"></i> Código</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
+    EDUCACIÓN
+    =============================-->
+    <section id="educacion" class="education">
+      <div class="container">
+        <h2 class="section-title">Educación</h2>
+        <div class="education-list">
+
+          <div class="education-card">
+            <h3>Licenciatura en Ingeniería de Sistemas</h3>
+            <p class="edu-date"><i class="fas fa-graduation-cap"></i> 2016 - 2019</p>
+            <p class="edu-institution">Universidad Nacional de Colombia</p>
+            <p class="edu-desc">Especializonte en desarrollo web y aplicaciones empresariales. Promedio académico: 4.2/5.0</p>
+          </div>
+
+          <div class="education-card">
+            <h3>Certificación: The Complete JavaScript Course</h3>
+            <p class="edu-date"><i class="fas fa-certificate"></i> 2020</p>
+            <p class="edu-institution">Udemy - Jonas Schmedtmann</p>
+            <p class="edu-desc">Curso exhaustivo sobre JavaScript moderno, asincronía y desarrollo de aplicaciones web interactivas.</p>
+          </div>
+
+          <div class="education-card">
+            <h3>Certificación: React - La Guía Completa</h3>
+            <p class="edu-date"><i class="fas fa-certificate"></i> 2021</p>
+            <p class="edu-institution">Udemy - Academind</p>
+            <p class="edu-desc">Dominio completo de React incluyendo Hooks, Redux, Next.js y pruebas unitarias.</p>
+          </div>
+
+          <div class="education-card">
+            <h3>Certificación: Node.js, Express, MongoDB & More</h3>
+            <p class="edu-date"><i class="fas fa-certificate"></i> 2022</p>
+            <p class="edu-institution">Udemy - Jonas Schmedtmann</p>
+            <p class="edu-desc">Desarrollo backend completo con Node.js, APIs RESTful, autenticación y bases de datos NoSQL.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
+    CONTACTO
+    =============================-->
+    <section id="contacto" class="contact">
+      <div class="container">
+        <h2 class="section-title contact-title">¡Ponte en Contacto!</h2>
+        <p class="contact-subtitle">¿Tienes una pregunta o una oportunidad? No dudes en comunicarte.</p>
+
+        <div class="contact-info-grid">
+          <div class="contact-info-card">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:jdcalderon-2024a@corhuila.edu.co">jdcalderon-2024a@corhuila.edu.co</a>
+          </div>
+          <div class="contact-info-card">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+573204054609">+57 320 405 4609</a>
+          </div>
+          <div class="contact-info-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Neiva, Colombia</span>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <input type="text" class="contact-input" placeholder="Tu nombre" />
+          <input type="email" class="contact-input" placeholder="Tu email" />
+          <textarea class="contact-input contact-textarea" placeholder="Tu mensaje"></textarea>
+          <button class="contact-btn">Enviar Mensaje</button>
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
+    FOOTER
+    =============================-->
+    <footer class="footer">
+      <p>© 2024 Juan David Calderón & Zara Melisa Monroy. Hecho con <i class="fas fa-heart" style="color: var(--accent-color);"></i> usando Bootstrap 5.</p>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="script-portafolio.js"></script>
+  </body>
+</html>
